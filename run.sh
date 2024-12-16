@@ -1,0 +1,30 @@
+export CUDA_VISIBLE_DEVICES=0,1
+python3 main.py \
+--act_type 'lrelu' \
+--batch_size 8 \
+--beta1 0.5 \
+--beta2 0.999 \
+--continue_epoch 0 \
+--data_root '' \
+--disp_step 100 \
+--experiment_name 'ResolutionQSM' \
+--gpu_ids '1' \
+--init_gain 1 \
+--init_type 'xavier' \
+--lambda_cycle 1 \
+--lambda_grad 0.05 \
+--lambda_tv 0.01 \
+--lr 1e-4 \
+--lr_decay_iters 0 \
+--lr_policy 'linear' \
+--nX 64 \
+--nY 64 \
+--nZ 64 \
+--n_epochs 100 \
+--n_epochs_decay 0 \
+--ngf 32 \
+--num_patch 5000 \
+--save_epoch 10 \
+--save_path '' \
+--stride 32 \
+--test_epoch 100
